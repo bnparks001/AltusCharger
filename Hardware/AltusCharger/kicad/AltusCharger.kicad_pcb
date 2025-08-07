@@ -116,9 +116,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "../../../../../../../Desktop/AltusChargerV1 Fab/")
 		)
 	)
 	(net 0 "")
@@ -137,18 +137,18 @@
 	(net 13 "Net-(D3-A)")
 	(net 14 "Net-(D4-K)")
 	(net 15 "Net-(D5-K)")
-	(net 16 "Net-(D8-A)")
+	(net 16 "Net-(D6-K)")
 	(net 17 "Net-(D10-A)")
 	(net 18 "Net-(D11-A)")
-	(net 19 "Net-(D9-A)")
+	(net 19 "Net-(D6-A)")
 	(net 20 "Net-(D10-K)")
 	(net 21 "Net-(D11-K)")
-	(net 22 "Net-(D12-A)")
+	(net 22 "Net-(D7-A)")
 	(net 23 "Net-(D12-K)")
-	(net 24 "Net-(D13-A)")
+	(net 24 "Net-(D7-K)")
 	(net 25 "Net-(D13-K)")
-	(net 26 "Net-(D14-K)")
-	(net 27 "Net-(D15-K)")
+	(net 26 "Net-(D8-K)")
+	(net 27 "Net-(D9-K)")
 	(net 28 "unconnected-(J3-D--PadB7)")
 	(net 29 "Net-(J3-CC1)")
 	(net 30 "Net-(J3-CC2)")
@@ -171,11 +171,11 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "041636d8-3a7a-4fd7-a6f4-02364b65f831")
-		(at 165.015 108.0125 -90)
+		(at 158.8125 86.868 180)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D10"
-			(at 0 -1.65 90)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9ba19fcf-f808-4a40-bea5-3a2e893d0fcf")
@@ -186,8 +186,8 @@
 				)
 			)
 		)
-		(property "Value" "KT-0805G"
-			(at 0 1.65 90)
+		(property "Value" "KT-0805R"
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "bc6ddf48-9caa-4c1e-a757-2ee1e03647de")
 			(effects
@@ -198,7 +198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f8a40f0e-0b36-4dd6-89df-5fcb492121fb")
@@ -210,7 +210,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5af9322a-3806-4850-8f5c-158257245e43")
@@ -221,8 +221,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2297"
-			(at 0 0 270)
+		(property "JLCPCB Part #" "C2295"
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -235,7 +235,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 270)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -248,10 +248,20 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/d4252fb6-1bad-4f22-b06e-56256ae588bb")
+		(path "/5c90d4c4-6041-4d9e-8e42-5f3b0f339ac4")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start 1 -0.96)
+			(end -1.685 -0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fe637421-c8e1-4b31-870f-e13a2ffd372a")
+		)
 		(fp_line
 			(start -1.685 0.96)
 			(end 1 0.96)
@@ -273,26 +283,6 @@
 			(uuid "dcc05fe8-ad3c-4b72-b1c5-44b956b559ab")
 		)
 		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fe637421-c8e1-4b31-870f-e13a2ffd372a")
-		)
-		(fp_line
-			(start -1.68 0.95)
-			(end -1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "98c7a0f6-d88f-4f46-99a0-d84358cf284e")
-		)
-		(fp_line
 			(start 1.68 0.95)
 			(end -1.68 0.95)
 			(stroke
@@ -301,16 +291,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "94b75b1d-fd56-4cd4-b47a-527dc36cd280")
-		)
-		(fp_line
-			(start -1.68 -0.95)
-			(end 1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "5f079d08-8a49-4c1f-80c9-8fa33de377a4")
 		)
 		(fp_line
 			(start 1.68 -0.95)
@@ -323,14 +303,24 @@
 			(uuid "f6fdecad-8cf1-4803-9fa1-cc647f5c947d")
 		)
 		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
+			(start -1.68 0.95)
+			(end -1.68 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "54f8533a-9068-4e2f-ac70-3661fd5a3fc9")
+			(layer "F.CrtYd")
+			(uuid "98c7a0f6-d88f-4f46-99a0-d84358cf284e")
+		)
+		(fp_line
+			(start -1.68 -0.95)
+			(end 1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5f079d08-8a49-4c1f-80c9-8fa33de377a4")
 		)
 		(fp_line
 			(start 1 0.6)
@@ -343,14 +333,14 @@
 			(uuid "c40a5c07-7050-40c2-892a-f1eb13b4e16a")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start 1 -0.6)
+			(end -0.7 -0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f88b5325-8c7e-42c2-acaf-8bd986152b31")
+			(uuid "5fae24ca-2c1a-4dae-8155-495a317122da")
 		)
 		(fp_line
 			(start -0.7 -0.6)
@@ -363,17 +353,27 @@
 			(uuid "0e4b0cfd-955b-4115-b672-762777f9c4e7")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start -1 0.6)
+			(end 1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "5fae24ca-2c1a-4dae-8155-495a317122da")
+			(uuid "54f8533a-9068-4e2f-ac70-3661fd5a3fc9")
+		)
+		(fp_line
+			(start -1 -0.3)
+			(end -1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f88b5325-8c7e-42c2-acaf-8bd986152b31")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d89d8582-b629-4d4b-8bcf-fa0bc88d2857")
 			(effects
@@ -384,7 +384,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 270)
+			(at -0.9375 0 180)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -394,7 +394,7 @@
 			(uuid "adb72867-d66f-4fdc-b148-bd724f410b8b")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 270)
+			(at 0.9375 0 180)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -434,7 +434,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "510"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "e11a4d00-c1b5-4709-a928-df00ec478aa2")
@@ -445,7 +445,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705924167974912"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706044791963648"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -469,7 +469,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25123"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -483,7 +483,7 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/add948b0-1df8-451d-b687-19f358977c57")
+		(path "/52450508-0441-44e9-876a-4970f677d9fb")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
@@ -603,7 +603,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 19 "Net-(D9-A)")
+			(net 22 "Net-(D7-A)")
 			(pintype "passive")
 			(uuid "37c589a3-c5a5-41cf-94cd-fc6cc99efb73")
 		)
@@ -1519,7 +1519,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "1598907c-8b65-491d-88d9-44de4f5f4d0c")
-		(at 167.132 108.0125 90)
+		(at 165.015 108.0125 -90)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D8"
@@ -1534,7 +1534,7 @@
 				)
 			)
 		)
-		(property "Value" "KT-0805R"
+		(property "Value" "KT-0805G"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(uuid "a06c73d7-8011-414a-ac90-8ab06e196143")
@@ -1569,8 +1569,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2295"
-			(at 0 0 90)
+		(property "JLCPCB Part #" "C2297"
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1583,7 +1583,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1596,19 +1596,19 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/f9784adb-c97c-462f-90ff-8029664773b5")
+		(path "/d4252fb6-1bad-4f22-b06e-56256ae588bb")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
+			(start -1.685 0.96)
+			(end 1 0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "83c5a75e-f5e8-4fc0-ba9e-56ee1cc042e3")
+			(uuid "07678f87-7029-4ffa-a798-c0ca8a275345")
 		)
 		(fp_line
 			(start -1.685 -0.96)
@@ -1621,44 +1621,14 @@
 			(uuid "e87a1efa-b0f0-45d0-804d-b4a2fc965166")
 		)
 		(fp_line
-			(start -1.685 0.96)
-			(end 1 0.96)
+			(start 1 -0.96)
+			(end -1.685 -0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "07678f87-7029-4ffa-a798-c0ca8a275345")
-		)
-		(fp_line
-			(start 1.68 -0.95)
-			(end 1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e13d9596-491c-4859-942e-b59de9201620")
-		)
-		(fp_line
-			(start -1.68 -0.95)
-			(end 1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "dd8c6208-b167-4b15-8c2d-cb245fddcc61")
-		)
-		(fp_line
-			(start 1.68 0.95)
-			(end -1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "0e5ce263-c76d-4b4b-85ee-60c4945d0ebe")
+			(uuid "83c5a75e-f5e8-4fc0-ba9e-56ee1cc042e3")
 		)
 		(fp_line
 			(start -1.68 0.95)
@@ -1671,34 +1641,44 @@
 			(uuid "a7b00683-be24-4716-9486-94b9ee3bcc66")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start 1.68 0.95)
+			(end -1.68 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "f3284022-a8ef-41b4-9883-fd27c90c87ce")
+			(layer "F.CrtYd")
+			(uuid "0e5ce263-c76d-4b4b-85ee-60c4945d0ebe")
 		)
 		(fp_line
-			(start -0.7 -0.6)
-			(end -1 -0.3)
+			(start -1.68 -0.95)
+			(end 1.68 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "6c85cbfb-0700-4cd0-bfac-a3c11eddc36b")
+			(layer "F.CrtYd")
+			(uuid "dd8c6208-b167-4b15-8c2d-cb245fddcc61")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start 1.68 -0.95)
+			(end 1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e13d9596-491c-4859-942e-b59de9201620")
+		)
+		(fp_line
+			(start -1 0.6)
+			(end 1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "5617cbdc-1f52-4f35-bdc0-8df2e02542a6")
+			(uuid "170033f8-1fc0-495f-8dce-56a77fbe0396")
 		)
 		(fp_line
 			(start 1 0.6)
@@ -1711,14 +1691,34 @@
 			(uuid "4c5f9640-140d-4141-a80f-38bf410f1dfe")
 		)
 		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
+			(start -1 -0.3)
+			(end -1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "170033f8-1fc0-495f-8dce-56a77fbe0396")
+			(uuid "5617cbdc-1f52-4f35-bdc0-8df2e02542a6")
+		)
+		(fp_line
+			(start -0.7 -0.6)
+			(end -1 -0.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6c85cbfb-0700-4cd0-bfac-a3c11eddc36b")
+		)
+		(fp_line
+			(start 1 -0.6)
+			(end -0.7 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f3284022-a8ef-41b4-9883-fd27c90c87ce")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 90)
@@ -1732,21 +1732,21 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 90)
+			(at -0.9375 0 270)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "Net-(D10-A)")
+			(net 26 "Net-(D8-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "f0fc1454-173f-44f2-8e18-35834196edb6")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 90)
+			(at 0.9375 0 270)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 16 "Net-(D8-A)")
+			(net 16 "Net-(D6-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "f05f79fb-ccdb-46ca-9de1-f71c35844b82")
@@ -2967,7 +2967,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 25 "Net-(D13-K)")
+			(net 21 "Net-(D11-K)")
 			(pinfunction "STAT")
 			(pintype "tri_state")
 			(uuid "7694e59e-b147-4d03-a04f-e489bd6fa0ae")
@@ -3787,7 +3787,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 21 "Net-(D11-K)")
+			(net 27 "Net-(D9-K)")
 			(pintype "passive")
 			(uuid "a1f24527-7c7c-44c0-b668-4c0f824081b3")
 		)
@@ -4338,6 +4338,254 @@
 			(uuid "f8180e07-4a09-4add-b6a4-ea8ba2b29855")
 		)
 		(embedded_fonts no)
+	)
+	(footprint "LED_SMD:LED_0805_2012Metric"
+		(layer "F.Cu")
+		(uuid "3f889719-39b9-47e2-aab9-8379fd7a1e2d")
+		(at 167.132 95.3125 90)
+		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
+		(tags "LED")
+		(property "Reference" "D7"
+			(at 0 -1.65 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "39ed03f4-17fb-4691-8e9f-4797e61bc4bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "KT-0805R"
+			(at 0 1.65 90)
+			(layer "F.Fab")
+			(uuid "de4615d0-adef-411e-8a97-9cb4ba636797")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3df0fcee-1074-4193-aae8-d395b7245d5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ccd3001b-897a-497f-8aec-de7a7ed05695")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C2295"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3200ce9-1a78-4d6f-b73e-5995187da753")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c9c0e57-44c6-45dd-8579-41a878959fc6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/2e495731-d96c-4d5f-a329-a94ebe3db281")
+		(sheetname "/")
+		(sheetfile "AltusCharger.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1 -0.96)
+			(end -1.685 -0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3765aa85-c53b-432f-a187-c7fbc4e206ec")
+		)
+		(fp_line
+			(start -1.685 -0.96)
+			(end -1.685 0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4b0acf83-d972-44b5-a24f-74a71d698bb6")
+		)
+		(fp_line
+			(start -1.685 0.96)
+			(end 1 0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5a3490b8-08ec-46ab-856f-2b02731cb4fa")
+		)
+		(fp_line
+			(start 1.68 -0.95)
+			(end 1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "68153231-805c-4fc6-86e6-5cca8ede989f")
+		)
+		(fp_line
+			(start -1.68 -0.95)
+			(end 1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3c466b48-367b-45cc-8d97-4614e22402b1")
+		)
+		(fp_line
+			(start 1.68 0.95)
+			(end -1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4a624391-aefa-4ef8-8cca-ea1ea0be2fb3")
+		)
+		(fp_line
+			(start -1.68 0.95)
+			(end -1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "aea2f315-897f-40cd-8185-3638319763ce")
+		)
+		(fp_line
+			(start 1 -0.6)
+			(end -0.7 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c8251663-3bf4-4179-9aeb-b160bb98513d")
+		)
+		(fp_line
+			(start -0.7 -0.6)
+			(end -1 -0.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "66373aee-17a0-4ff4-ab16-21ea2355c4f0")
+		)
+		(fp_line
+			(start -1 -0.3)
+			(end -1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6557edc6-1397-4501-bdec-53f371696b05")
+		)
+		(fp_line
+			(start 1 0.6)
+			(end 1 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d211e954-ecdc-4cce-9314-b5cc90c7a5dc")
+		)
+		(fp_line
+			(start -1 0.6)
+			(end 1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e3287084-d7bb-47b8-81df-b844ea9ee316")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "c320961d-834e-4141-8bb4-7eb30537f18f")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.9375 0 90)
+			(size 0.975 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 24 "Net-(D7-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "21479e6e-5d66-4d71-ab4e-cfe34ec45d52")
+		)
+		(pad "2" smd roundrect
+			(at 0.9375 0 90)
+			(size 0.975 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 22 "Net-(D7-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "0af3a383-4a8a-476f-828e-440b29935642")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -5002,7 +5250,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "5b375720-5710-4b9f-b1b3-6c1fb5aab193")
-		(at 158.8125 86.868 180)
+		(at 158.8125 88.985)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D12"
@@ -5017,7 +5265,7 @@
 				)
 			)
 		)
-		(property "Value" "KT-0805R"
+		(property "Value" "KT-0805G"
 			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "0e1c7ba7-030d-4843-a920-6dd42566a336")
@@ -5052,8 +5300,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2295"
-			(at 0 0 180)
+		(property "JLCPCB Part #" "C2297"
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5066,7 +5314,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5079,19 +5327,19 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/5c90d4c4-6041-4d9e-8e42-5f3b0f339ac4")
+		(path "/e2e45f67-a3ae-4f38-91a8-58ce64ac5b08")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
+			(start -1.685 -0.96)
+			(end -1.685 0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1a1e4220-e34d-45fb-9dd6-ebc6ff97c40e")
+			(uuid "3e0539d6-b7d8-4a82-b4f4-92be68190234")
 		)
 		(fp_line
 			(start -1.685 0.96)
@@ -5104,44 +5352,14 @@
 			(uuid "7d4e8073-5c61-4d75-b8b0-6c1373e7d1cd")
 		)
 		(fp_line
-			(start -1.685 -0.96)
-			(end -1.685 0.96)
+			(start 1 -0.96)
+			(end -1.685 -0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3e0539d6-b7d8-4a82-b4f4-92be68190234")
-		)
-		(fp_line
-			(start 1.68 0.95)
-			(end -1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "0c0dc538-89bc-49f6-8b7a-c8965d3f918b")
-		)
-		(fp_line
-			(start 1.68 -0.95)
-			(end 1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "24bff201-e486-4561-994a-0d0fd93af2d2")
-		)
-		(fp_line
-			(start -1.68 0.95)
-			(end -1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "055f0d45-9775-4315-b02f-b86b6332aad2")
+			(uuid "1a1e4220-e34d-45fb-9dd6-ebc6ff97c40e")
 		)
 		(fp_line
 			(start -1.68 -0.95)
@@ -5154,34 +5372,44 @@
 			(uuid "9ea9a1e5-a1b1-49d6-bf45-61cfdb961e91")
 		)
 		(fp_line
-			(start 1 0.6)
-			(end 1 -0.6)
+			(start -1.68 0.95)
+			(end -1.68 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "08b01532-3eb1-4d85-948c-085a779d4a65")
+			(layer "F.CrtYd")
+			(uuid "055f0d45-9775-4315-b02f-b86b6332aad2")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start 1.68 -0.95)
+			(end 1.68 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "8727cbd5-29a7-4474-9eb2-76d813c4c48f")
+			(layer "F.CrtYd")
+			(uuid "24bff201-e486-4561-994a-0d0fd93af2d2")
 		)
 		(fp_line
-			(start -0.7 -0.6)
-			(end -1 -0.3)
+			(start 1.68 0.95)
+			(end -1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0c0dc538-89bc-49f6-8b7a-c8965d3f918b")
+		)
+		(fp_line
+			(start -1 -0.3)
+			(end -1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3655a853-18d5-44b0-a12f-b416ad3b32e6")
+			(uuid "2477923e-869e-48db-8503-602f85b9a6ec")
 		)
 		(fp_line
 			(start -1 0.6)
@@ -5194,14 +5422,34 @@
 			(uuid "1acf0a56-e7a3-4f59-8556-4305f495ce01")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start -0.7 -0.6)
+			(end -1 -0.3)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2477923e-869e-48db-8503-602f85b9a6ec")
+			(uuid "3655a853-18d5-44b0-a12f-b416ad3b32e6")
+		)
+		(fp_line
+			(start 1 -0.6)
+			(end -0.7 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8727cbd5-29a7-4474-9eb2-76d813c4c48f")
+		)
+		(fp_line
+			(start 1 0.6)
+			(end 1 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "08b01532-3eb1-4d85-948c-085a779d4a65")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
@@ -5215,7 +5463,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 180)
+			(at -0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -5225,11 +5473,11 @@
 			(uuid "89e7df91-ee45-43a9-9c72-7fb954dcefc3")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 180)
+			(at 0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 22 "Net-(D12-A)")
+			(net 20 "Net-(D10-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "39731c31-d3bd-4381-8b27-685f855399df")
@@ -5265,7 +5513,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "510"
 			(at 0 1.17 90)
 			(layer "F.Fab")
 			(uuid "7bc351fd-3aca-4870-8e79-dd9798e299a4")
@@ -5276,7 +5524,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705924167974912"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706044791963648"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5300,7 +5548,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25123"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5314,7 +5562,7 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/60810e75-d4d5-4b88-bc23-8a728de2f9a6")
+		(path "/cdba159e-cddb-4138-90bc-803df4c12bec")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
@@ -5434,7 +5682,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 16 "Net-(D8-A)")
+			(net 19 "Net-(D6-A)")
 			(pintype "passive")
 			(uuid "24b18e75-9f94-4cfe-8597-243b35da0190")
 		)
@@ -5982,7 +6230,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "Net-(D10-A)")
+			(net 16 "Net-(D6-K)")
 			(pinfunction "STAT")
 			(pintype "tri_state")
 			(uuid "48720f49-8593-4465-8fdf-11f48e0494fe")
@@ -6916,7 +7164,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "6e96b939-98fb-438f-9eec-44507385c130")
-		(at 167.132 95.3125 90)
+		(at 165.015 95.3125 -90)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D9"
@@ -6931,7 +7179,7 @@
 				)
 			)
 		)
-		(property "Value" "KT-0805R"
+		(property "Value" "KT-0805G"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(uuid "9a931ee1-3d4a-41f4-b1cd-5ca5474bc215")
@@ -6966,8 +7214,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2295"
-			(at 0 0 90)
+		(property "JLCPCB Part #" "C2297"
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6980,7 +7228,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6993,19 +7241,19 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/2e495731-d96c-4d5f-a329-a94ebe3db281")
+		(path "/1f06454a-7150-4cf3-9866-1ea9af68fea8")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
+			(start -1.685 0.96)
+			(end 1 0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3e84edbd-d46d-47e3-a4c1-dbb965d6eb25")
+			(uuid "72459fb1-ef33-433f-a156-3757ce7ee4ee")
 		)
 		(fp_line
 			(start -1.685 -0.96)
@@ -7018,44 +7266,14 @@
 			(uuid "2469f201-0713-45cf-b852-1818b5c89b70")
 		)
 		(fp_line
-			(start -1.685 0.96)
-			(end 1 0.96)
+			(start 1 -0.96)
+			(end -1.685 -0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "72459fb1-ef33-433f-a156-3757ce7ee4ee")
-		)
-		(fp_line
-			(start 1.68 -0.95)
-			(end 1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "30c34f7c-0e31-417a-805a-ccb738de7739")
-		)
-		(fp_line
-			(start -1.68 -0.95)
-			(end 1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "900902aa-b8bd-4d66-8ea3-e6de4190f013")
-		)
-		(fp_line
-			(start 1.68 0.95)
-			(end -1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e63bb428-689f-4f82-816f-3a9ae25baebb")
+			(uuid "3e84edbd-d46d-47e3-a4c1-dbb965d6eb25")
 		)
 		(fp_line
 			(start -1.68 0.95)
@@ -7068,34 +7286,44 @@
 			(uuid "397b1700-ff46-457a-9cfe-a5177474ee96")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start 1.68 0.95)
+			(end -1.68 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "31a31a6f-b18a-4dea-8f6e-12d48d726189")
+			(layer "F.CrtYd")
+			(uuid "e63bb428-689f-4f82-816f-3a9ae25baebb")
 		)
 		(fp_line
-			(start -0.7 -0.6)
-			(end -1 -0.3)
+			(start -1.68 -0.95)
+			(end 1.68 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "c8360116-77c3-4946-bb9a-ec5897d1fd20")
+			(layer "F.CrtYd")
+			(uuid "900902aa-b8bd-4d66-8ea3-e6de4190f013")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start 1.68 -0.95)
+			(end 1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "30c34f7c-0e31-417a-805a-ccb738de7739")
+		)
+		(fp_line
+			(start -1 0.6)
+			(end 1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "bc607f4e-4f54-48b8-8d6f-69f43bd4e695")
+			(uuid "1e04eed6-4ff6-4efc-9017-07c39fc29533")
 		)
 		(fp_line
 			(start 1 0.6)
@@ -7108,14 +7336,34 @@
 			(uuid "da4f5540-83c7-4757-ab6e-be518d85c98f")
 		)
 		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
+			(start -1 -0.3)
+			(end -1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "1e04eed6-4ff6-4efc-9017-07c39fc29533")
+			(uuid "bc607f4e-4f54-48b8-8d6f-69f43bd4e695")
+		)
+		(fp_line
+			(start -0.7 -0.6)
+			(end -1 -0.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c8360116-77c3-4946-bb9a-ec5897d1fd20")
+		)
+		(fp_line
+			(start 1 -0.6)
+			(end -0.7 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "31a31a6f-b18a-4dea-8f6e-12d48d726189")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 90)
@@ -7129,21 +7377,21 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 90)
+			(at -0.9375 0 270)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "Net-(D11-A)")
+			(net 27 "Net-(D9-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "28950216-4000-4083-9582-75a07c86361e")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 90)
+			(at 0.9375 0 270)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 19 "Net-(D9-A)")
+			(net 24 "Net-(D7-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "2d97563b-8658-43f7-bab7-3be13dc51042")
@@ -7470,7 +7718,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "Net-(D11-A)")
+			(net 24 "Net-(D7-K)")
 			(pinfunction "STAT")
 			(pintype "tri_state")
 			(uuid "47adb9d3-4bb8-4af0-90e9-701acf4b6f6c")
@@ -7531,7 +7779,7 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "7924e321-75e8-4fa6-ad66-a8b04d03986d")
-		(at 120.7125 86.868 180)
+		(at 120.7125 88.985)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D13"
@@ -7546,7 +7794,7 @@
 				)
 			)
 		)
-		(property "Value" "KT-0805R"
+		(property "Value" "KT-0805G"
 			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "e98fda38-4faf-4b95-85d5-b9d48a645a99")
@@ -7581,8 +7829,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2295"
-			(at 0 0 180)
+		(property "JLCPCB Part #" "C2297"
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7595,7 +7843,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 180)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7608,19 +7856,19 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/fd1a5af8-7236-4c0f-a69d-fb2019a97191")
+		(path "/71794416-bfdd-4976-b2a1-32b587f034ab")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
+			(start -1.685 -0.96)
+			(end -1.685 0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d3b3bb0e-5e3e-48c1-92f0-84787e990b31")
+			(uuid "554fd822-a170-4d3f-bfb5-946300f008b2")
 		)
 		(fp_line
 			(start -1.685 0.96)
@@ -7633,44 +7881,14 @@
 			(uuid "80210450-6940-4880-bcde-b63262a52095")
 		)
 		(fp_line
-			(start -1.685 -0.96)
-			(end -1.685 0.96)
+			(start 1 -0.96)
+			(end -1.685 -0.96)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "554fd822-a170-4d3f-bfb5-946300f008b2")
-		)
-		(fp_line
-			(start 1.68 0.95)
-			(end -1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "eb8d9174-9285-4cf1-bf02-1f06cdc57686")
-		)
-		(fp_line
-			(start 1.68 -0.95)
-			(end 1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a835b468-2c5d-4d64-a201-2e55c0cd021b")
-		)
-		(fp_line
-			(start -1.68 0.95)
-			(end -1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "2ed2c629-02a2-4747-8fb1-cae4873ddc6e")
+			(uuid "d3b3bb0e-5e3e-48c1-92f0-84787e990b31")
 		)
 		(fp_line
 			(start -1.68 -0.95)
@@ -7683,34 +7901,44 @@
 			(uuid "6272e1cf-a62f-44c7-a821-15db5df2854b")
 		)
 		(fp_line
-			(start 1 0.6)
-			(end 1 -0.6)
+			(start -1.68 0.95)
+			(end -1.68 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "32033ee7-8892-4dd9-a7c9-91b5f3a2cb32")
+			(layer "F.CrtYd")
+			(uuid "2ed2c629-02a2-4747-8fb1-cae4873ddc6e")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start 1.68 -0.95)
+			(end 1.68 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "b0ae36d4-d383-4ee9-b9b3-5fdd3f9e76e3")
+			(layer "F.CrtYd")
+			(uuid "a835b468-2c5d-4d64-a201-2e55c0cd021b")
 		)
 		(fp_line
-			(start -0.7 -0.6)
-			(end -1 -0.3)
+			(start 1.68 0.95)
+			(end -1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "eb8d9174-9285-4cf1-bf02-1f06cdc57686")
+		)
+		(fp_line
+			(start -1 -0.3)
+			(end -1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e8f4f43c-13e9-4be4-9db2-7038c328f7e7")
+			(uuid "e78e60b9-b2a6-4be4-9636-d469fe3c7b6c")
 		)
 		(fp_line
 			(start -1 0.6)
@@ -7723,14 +7951,34 @@
 			(uuid "6df7a281-71da-4b81-861e-88a5a9975b42")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start -0.7 -0.6)
+			(end -1 -0.3)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e78e60b9-b2a6-4be4-9636-d469fe3c7b6c")
+			(uuid "e8f4f43c-13e9-4be4-9db2-7038c328f7e7")
+		)
+		(fp_line
+			(start 1 -0.6)
+			(end -0.7 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b0ae36d4-d383-4ee9-b9b3-5fdd3f9e76e3")
+		)
+		(fp_line
+			(start 1 0.6)
+			(end 1 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "32033ee7-8892-4dd9-a7c9-91b5f3a2cb32")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
@@ -7744,7 +7992,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 180)
+			(at -0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7754,11 +8002,11 @@
 			(uuid "fcdb6bb9-cf48-4c2c-8d75-46c5bbc8c397")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 180)
+			(at 0.9375 0)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 24 "Net-(D13-A)")
+			(net 21 "Net-(D11-K)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "0f6fc88d-5e93-4c3e-9506-bf9578ecb9ff")
@@ -8262,7 +8510,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "510"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "aa8a5e02-2f13-43b0-aef6-ad9f46083738")
@@ -8273,7 +8521,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705924167974912"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706044791963648"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8297,7 +8545,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8311,7 +8559,7 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/0b042ff9-4b09-4df5-a491-c44595784049")
+		(path "/f18cb6f0-8831-480d-98c7-e354dba82c7d")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
@@ -8431,7 +8679,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 24 "Net-(D13-A)")
+			(net 18 "Net-(D11-A)")
 			(pintype "passive")
 			(uuid "9b5b0a52-a2fa-4a1c-b0e4-94bea644914d")
 		)
@@ -8475,7 +8723,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "510"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "cd45399e-4995-4598-9924-e0b6b541f8e4")
@@ -8486,7 +8734,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705924167974912"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706044791963648"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8510,7 +8758,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25123"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8524,7 +8772,7 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/32255a8b-56ae-4351-b3e7-7d4d2f8cd32c")
+		(path "/77c4c658-6181-4f85-91a3-b18b7439e61e")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
@@ -8644,7 +8892,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 22 "Net-(D12-A)")
+			(net 17 "Net-(D10-A)")
 			(pintype "passive")
 			(uuid "d97a167c-9f0f-4cb7-9bb7-bbf9abbc9bb3")
 		)
@@ -9070,7 +9318,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 26 "Net-(D14-K)")
+			(net 23 "Net-(D12-K)")
 			(pintype "passive")
 			(uuid "f2764c69-0c1d-4c52-82d5-146dbe04c276")
 		)
@@ -10263,7 +10511,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "510"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "e68addcc-6b8b-4156-8539-2eae59f202db")
@@ -10274,7 +10522,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705924167974912"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706044791963648"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10298,7 +10546,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10312,7 +10560,7 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/39793535-23ba-43b9-bac9-732522f5e3c4")
+		(path "/6fde61a5-9d1a-4f49-afe4-88b359e47d04")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
@@ -13403,6 +13651,254 @@
 			)
 		)
 	)
+	(footprint "LED_SMD:LED_0805_2012Metric"
+		(layer "F.Cu")
+		(uuid "a7f0c6c3-dc01-4f24-a547-ea853c23a79a")
+		(at 167.132 108.0125 90)
+		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
+		(tags "LED")
+		(property "Reference" "D6"
+			(at 0 -1.65 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f71002a9-53b5-4369-b409-f26a719c5810")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "KT-0805R"
+			(at 0 1.65 90)
+			(layer "F.Fab")
+			(uuid "7239dcbc-f41e-4bff-9625-1eeb957839e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c51a3cb-f711-4824-944b-4dc4eba268a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64fdc850-b7ec-43b1-91d2-86e45ffcd627")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C2295"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3e8989b-5e6b-44fc-bc0e-09c5d34bb457")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d120fa3-bc7a-47e7-bbd4-9acbb1841a6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
+		(path "/f9784adb-c97c-462f-90ff-8029664773b5")
+		(sheetname "/")
+		(sheetfile "AltusCharger.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 1 -0.96)
+			(end -1.685 -0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "94c6e59b-41b8-41ef-ab0e-c5bc866fdc8f")
+		)
+		(fp_line
+			(start -1.685 -0.96)
+			(end -1.685 0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9f1068db-28e5-4018-bb59-6b85d83e37d2")
+		)
+		(fp_line
+			(start -1.685 0.96)
+			(end 1 0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0134ba11-a993-4e6b-a4d6-622fe79939cd")
+		)
+		(fp_line
+			(start 1.68 -0.95)
+			(end 1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "01c8996d-2f01-45f4-b3a7-3420bca12a67")
+		)
+		(fp_line
+			(start -1.68 -0.95)
+			(end 1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "51045592-ee2f-43d0-9195-a3d9966a959c")
+		)
+		(fp_line
+			(start 1.68 0.95)
+			(end -1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "651e1cdd-734d-408d-9e28-31cbaf523bd3")
+		)
+		(fp_line
+			(start -1.68 0.95)
+			(end -1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e6cd6147-8a1a-46ef-b318-31d9acf180d9")
+		)
+		(fp_line
+			(start 1 -0.6)
+			(end -0.7 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b619ad9a-1a7b-45dc-afe7-c28046a603f4")
+		)
+		(fp_line
+			(start -0.7 -0.6)
+			(end -1 -0.3)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7a2bb214-f330-4ad2-b6d8-eefd843a27bb")
+		)
+		(fp_line
+			(start -1 -0.3)
+			(end -1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b20a6c1a-1704-4e37-9035-5aea2f5d5c23")
+		)
+		(fp_line
+			(start 1 0.6)
+			(end 1 -0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "064d31ac-292d-4c3c-902d-9a005767ed87")
+		)
+		(fp_line
+			(start -1 0.6)
+			(end 1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9e8ad3ed-1074-4ce2-b2fd-8484e5bab272")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "bf045fda-f336-459d-9c2e-37e829edae69")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.9375 0 90)
+			(size 0.975 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 16 "Net-(D6-K)")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "47c158b7-4617-4e91-ae68-5c9ff1602a23")
+		)
+		(pad "2" smd roundrect
+			(at 0.9375 0 90)
+			(size 0.975 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 19 "Net-(D6-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "c1053df9-4b6b-4b75-9643-532a8ad6b4fc")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "adc280f3-66ac-4578-9fbf-e7dfcb12486a")
@@ -14179,11 +14675,11 @@
 	(footprint "LED_SMD:LED_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "b042b2d7-125d-4029-9522-6afe3599a84a")
-		(at 165.015 95.3125 -90)
+		(at 120.7125 86.868 180)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D11"
-			(at 0 -1.65 90)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1f6a38ff-4a4c-4d6b-95cd-626be2d21ff1")
@@ -14194,8 +14690,8 @@
 				)
 			)
 		)
-		(property "Value" "KT-0805G"
-			(at 0 1.65 90)
+		(property "Value" "KT-0805R"
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "cb49625a-ef94-407f-a170-96d8e4308e75")
 			(effects
@@ -14206,7 +14702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cf37e6e2-b715-4b3e-b025-cbcf17ec3088")
@@ -14218,7 +14714,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "734bca00-931d-46df-b32e-6db98c7d4f4f")
@@ -14229,8 +14725,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2297"
-			(at 0 0 270)
+		(property "JLCPCB Part #" "C2295"
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14243,7 +14739,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 270)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -14256,10 +14752,20 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/1f06454a-7150-4cf3-9866-1ea9af68fea8")
+		(path "/fd1a5af8-7236-4c0f-a69d-fb2019a97191")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
+		(fp_line
+			(start 1 -0.96)
+			(end -1.685 -0.96)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fecad883-a156-4297-995c-ee65ddb23ca1")
+		)
 		(fp_line
 			(start -1.685 0.96)
 			(end 1 0.96)
@@ -14281,26 +14787,6 @@
 			(uuid "97358448-6def-46fd-bb19-489f68a45496")
 		)
 		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "fecad883-a156-4297-995c-ee65ddb23ca1")
-		)
-		(fp_line
-			(start -1.68 0.95)
-			(end -1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "717fcbfe-afe6-4f59-a325-e9e1ca58ccfd")
-		)
-		(fp_line
 			(start 1.68 0.95)
 			(end -1.68 0.95)
 			(stroke
@@ -14309,16 +14795,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "b0559202-2ff2-4760-85b9-22ce06c37c4f")
-		)
-		(fp_line
-			(start -1.68 -0.95)
-			(end 1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a425202f-e9ed-42a4-9721-0670849ffa59")
 		)
 		(fp_line
 			(start 1.68 -0.95)
@@ -14331,14 +14807,24 @@
 			(uuid "ca7fe478-c9fd-4fd4-af6d-6857d4970593")
 		)
 		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
+			(start -1.68 0.95)
+			(end -1.68 -0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "c9e0be24-6a92-420f-a68f-b6abfdbe8b31")
+			(layer "F.CrtYd")
+			(uuid "717fcbfe-afe6-4f59-a325-e9e1ca58ccfd")
+		)
+		(fp_line
+			(start -1.68 -0.95)
+			(end 1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a425202f-e9ed-42a4-9721-0670849ffa59")
 		)
 		(fp_line
 			(start 1 0.6)
@@ -14351,14 +14837,14 @@
 			(uuid "ef14ad42-7c7c-4640-9ec5-9a0b2ab264ec")
 		)
 		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
+			(start 1 -0.6)
+			(end -0.7 -0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "21bab534-983e-45fa-91c8-6ed80c15861c")
+			(uuid "9becc51d-7425-4e6d-858d-1e7791a47c8c")
 		)
 		(fp_line
 			(start -0.7 -0.6)
@@ -14371,17 +14857,27 @@
 			(uuid "27f95e84-91ef-4ce0-80fe-b76cb2564022")
 		)
 		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
+			(start -1 0.6)
+			(end 1 0.6)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "9becc51d-7425-4e6d-858d-1e7791a47c8c")
+			(uuid "c9e0be24-6a92-420f-a68f-b6abfdbe8b31")
+		)
+		(fp_line
+			(start -1 -0.3)
+			(end -1 0.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "21bab534-983e-45fa-91c8-6ed80c15861c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "0cd15d66-9b32-446e-8d15-5d95e53e55cd")
 			(effects
@@ -14392,7 +14888,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.9375 0 270)
+			(at -0.9375 0 180)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -14402,7 +14898,7 @@
 			(uuid "864b58df-882c-4082-a35a-16600bf65f43")
 		)
 		(pad "2" smd roundrect
-			(at 0.9375 0 270)
+			(at 0.9375 0 180)
 			(size 0.975 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -14611,7 +15107,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 27 "Net-(D15-K)")
+			(net 25 "Net-(D13-K)")
 			(pintype "passive")
 			(uuid "999bbd6c-14e9-464d-abb4-05ac404f9a4e")
 		)
@@ -15464,7 +15960,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "510"
 			(at 0 1.17 0)
 			(layer "F.Fab")
 			(uuid "2280503b-a575-4e83-a4ad-9634b8e8b16b")
@@ -15475,7 +15971,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705924167974912"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706044791963648"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15499,7 +15995,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25123"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15513,7 +16009,7 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/4cd673c3-24eb-4d64-92fc-3445ba64c048")
+		(path "/dfda8db2-4b67-43a5-8862-19c9a540926e")
 		(sheetname "/")
 		(sheetfile "AltusCharger.kicad_sch")
 		(attr smd)
@@ -16436,7 +16932,7 @@
 			(size 1.325 0.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 23 "Net-(D12-K)")
+			(net 20 "Net-(D10-K)")
 			(pinfunction "STAT")
 			(pintype "tri_state")
 			(uuid "61b15bf5-e530-42c5-b899-4678de094503")
@@ -16894,7 +17390,7 @@
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 20 "Net-(D10-K)")
+			(net 26 "Net-(D8-K)")
 			(pintype "passive")
 			(uuid "1e642b5d-fe5f-4707-8cb6-8867620fa093")
 		)
@@ -17559,254 +18055,6 @@
 			)
 		)
 	)
-	(footprint "LED_SMD:LED_0805_2012Metric"
-		(layer "F.Cu")
-		(uuid "f4fb277c-2468-42f5-a18a-336ce1a8f5c0")
-		(at 120.7125 88.985)
-		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
-		(tags "LED")
-		(property "Reference" "D15"
-			(at 0 -1.65 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ea0cdde7-0f90-4874-af42-d03a57dacad3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "KT-0805G"
-			(at 0 1.65 0)
-			(layer "F.Fab")
-			(uuid "372ebd06-8309-49c0-8636-5de5df5938c5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2d4f82ae-af22-4d19-bff1-4218cdd27dba")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b50e2f5e-5bf0-4e6c-bb62-146b00125eab")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Part #" "C2297"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3e721164-8a54-4c26-a95c-ac9600a7b0fb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bf7b6a43-4d82-472f-9265-54a5fc9f0c5b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/71794416-bfdd-4976-b2a1-32b587f034ab")
-		(sheetname "/")
-		(sheetfile "AltusCharger.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.685 -0.96)
-			(end -1.685 0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a7095657-240a-45b5-badf-3009b9d32939")
-		)
-		(fp_line
-			(start -1.685 0.96)
-			(end 1 0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0059c4a1-9b25-46f3-a118-0c3bf2f8317b")
-		)
-		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7b4ded82-fc2e-44f7-8d1c-d182a62efaab")
-		)
-		(fp_line
-			(start -1.68 -0.95)
-			(end 1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "1b09545f-657c-416a-8765-71e4399c2f2a")
-		)
-		(fp_line
-			(start -1.68 0.95)
-			(end -1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e9a5b11e-aaca-4a39-8d19-9ce1c9ab4d6a")
-		)
-		(fp_line
-			(start 1.68 -0.95)
-			(end 1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8e870b3c-5f3d-49a0-9cb5-0b6f7751bba2")
-		)
-		(fp_line
-			(start 1.68 0.95)
-			(end -1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "0f33c241-e59a-488a-9bef-e8aca5e134d3")
-		)
-		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "4a3e2597-fd85-41a9-b883-9f2ddd3b9776")
-		)
-		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "10b55f98-5079-4922-9ce6-4dba227d653e")
-		)
-		(fp_line
-			(start -0.7 -0.6)
-			(end -1 -0.3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8ed04476-590f-42da-bf98-d9e95fdc4212")
-		)
-		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5132a718-1f16-4fd3-b2d7-c5958ac2e420")
-		)
-		(fp_line
-			(start 1 0.6)
-			(end 1 -0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "958e0375-5276-4a39-b908-8b4442749e35")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "1ad9e4cd-0079-4cfa-84d8-6f9189fdbd4c")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.9375 0)
-			(size 0.975 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 27 "Net-(D15-K)")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "c1fc28f3-9f83-4173-bb4b-73c7d08370e7")
-		)
-		(pad "2" smd roundrect
-			(at 0.9375 0)
-			(size 0.975 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 25 "Net-(D13-K)")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "dc5d44c6-a02f-4b3c-a0c0-58922d6c963d")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f557056b-aebc-4836-bdf4-1bbc3d1cc663")
@@ -18264,254 +18512,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "LED_SMD:LED_0805_2012Metric"
-		(layer "F.Cu")
-		(uuid "fac899ea-a979-4034-8afe-5f7859a7f74e")
-		(at 158.8125 88.985)
-		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
-		(tags "LED")
-		(property "Reference" "D14"
-			(at 0 -1.65 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "bfe8daf3-13fc-49d2-b767-de12e93a6f9b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "KT-0805G"
-			(at 0 1.65 0)
-			(layer "F.Fab")
-			(uuid "fafc1471-d672-4839-bc76-af2c4e1b2cad")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1a9c0ed7-d832-4cad-ac6e-fa4a67b7c011")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e6c67aa7-f198-4f07-8c9a-5a894eea0bf3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "JLCPCB Part #" "C2297"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f6b591fc-f927-4c86-8e93-cea997aaaf02")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f26df02b-0254-4bf5-b4e2-01eb3c7b318e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/e2e45f67-a3ae-4f38-91a8-58ce64ac5b08")
-		(sheetname "/")
-		(sheetfile "AltusCharger.kicad_sch")
-		(attr smd)
-		(fp_line
-			(start -1.685 -0.96)
-			(end -1.685 0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4d3275e0-f9c9-474d-b9e0-4b451781092a")
-		)
-		(fp_line
-			(start -1.685 0.96)
-			(end 1 0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3199fe28-315d-4c30-8ce1-578085660018")
-		)
-		(fp_line
-			(start 1 -0.96)
-			(end -1.685 -0.96)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bda70ff2-0ed4-40af-9295-cce15b784252")
-		)
-		(fp_line
-			(start -1.68 -0.95)
-			(end 1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "de1b5675-5911-4b04-bb31-adfe81e84707")
-		)
-		(fp_line
-			(start -1.68 0.95)
-			(end -1.68 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "fb04ff5c-fd8d-4bba-93a1-88c27568e74d")
-		)
-		(fp_line
-			(start 1.68 -0.95)
-			(end 1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "2077db58-3f07-4d6f-800f-e404b3b1d126")
-		)
-		(fp_line
-			(start 1.68 0.95)
-			(end -1.68 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "b447641f-6352-4b76-b18b-40ad0307c45a")
-		)
-		(fp_line
-			(start -1 -0.3)
-			(end -1 0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "707e2a25-d4ef-429a-b17a-4a02c6fe54d8")
-		)
-		(fp_line
-			(start -1 0.6)
-			(end 1 0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "00e0d64a-e253-4a93-a99b-ee24e2a8c91e")
-		)
-		(fp_line
-			(start -0.7 -0.6)
-			(end -1 -0.3)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "755111fe-84c0-4ea7-b54c-4325f3ef7ad0")
-		)
-		(fp_line
-			(start 1 -0.6)
-			(end -0.7 -0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7e279c43-36b0-46db-9f82-7feb5945dba9")
-		)
-		(fp_line
-			(start 1 0.6)
-			(end 1 -0.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e613128c-f31c-443d-9a24-fa79bc4721a4")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "ee30d9d2-3e5a-4ce7-be3b-3719df998b0b")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.08)
-				)
-			)
-		)
-		(pad "1" smd roundrect
-			(at -0.9375 0)
-			(size 0.975 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 26 "Net-(D14-K)")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "eafb70e2-cacb-49d2-bac4-aaf686d88ccf")
-		)
-		(pad "2" smd roundrect
-			(at 0.9375 0)
-			(size 0.975 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net 23 "Net-(D12-K)")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "39c3f086-1d1f-4652-9164-d8b666510e0a")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19426,100 +19426,116 @@
 		(uuid "f59442a2-a586-4eae-b0bb-3833bd102589")
 	)
 	(segment
-		(start 167.132 107.0656)
-		(end 167.132 105.7656)
-		(width 0.127)
-		(layer "F.Cu")
-		(net 16)
-		(uuid "ccfb2ab6-3fd7-46e2-9e81-30acd9b507ce")
-	)
-	(segment
 		(start 169.042 108.9406)
 		(end 165.1 108.9406)
 		(width 0.127)
 		(layer "F.Cu")
-		(net 17)
+		(net 16)
 		(uuid "099a976c-db58-4583-aa54-3952f6b237f0")
-	)
-	(segment
-		(start 169.042 96.25)
-		(end 165.1 96.25)
-		(width 0.127)
-		(layer "F.Cu")
-		(net 18)
-		(uuid "4da392fc-72d6-4dc4-9041-bd2e72c0c5c6")
-	)
-	(segment
-		(start 167.132 94.375)
-		(end 167.132 93.075)
-		(width 0.127)
-		(layer "F.Cu")
-		(net 19)
-		(uuid "92d1e5ed-33d7-4885-9609-d344ad073533")
-	)
-	(segment
-		(start 165.1 107.0656)
-		(end 165.1 105.7656)
-		(width 0.127)
-		(layer "F.Cu")
-		(net 20)
-		(uuid "03ddc49a-665a-438c-8340-eee659750442")
-	)
-	(segment
-		(start 165.1 94.375)
-		(end 165.1 93.075)
-		(width 0.127)
-		(layer "F.Cu")
-		(net 21)
-		(uuid "e3b70d20-24c5-4449-8d54-b3fec026302d")
 	)
 	(segment
 		(start 157.875 86.868)
 		(end 156.575 86.868)
 		(width 0.127)
 		(layer "F.Cu")
-		(net 22)
+		(net 17)
 		(uuid "0489a2f6-586a-47c3-ba40-8b49e10eedb8")
-	)
-	(segment
-		(start 159.75 85.043)
-		(end 159.75 88.985)
-		(width 0.127)
-		(layer "F.Cu")
-		(net 23)
-		(uuid "a5efd358-f440-4779-81d8-f47455b4038d")
 	)
 	(segment
 		(start 119.7805 86.868)
 		(end 118.4805 86.868)
 		(width 0.127)
 		(layer "F.Cu")
-		(net 24)
+		(net 18)
 		(uuid "f571533c-6663-4aea-bf88-0f26ec6884f5")
+	)
+	(segment
+		(start 167.132 107.0656)
+		(end 167.132 105.7656)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 19)
+		(uuid "ccfb2ab6-3fd7-46e2-9e81-30acd9b507ce")
+	)
+	(segment
+		(start 159.75 85.043)
+		(end 159.75 88.985)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 20)
+		(uuid "a5efd358-f440-4779-81d8-f47455b4038d")
 	)
 	(segment
 		(start 121.6555 85.043)
 		(end 121.6555 88.985)
 		(width 0.127)
 		(layer "F.Cu")
-		(net 25)
+		(net 21)
 		(uuid "ee7cfdba-203b-414f-88a2-be917eb451f9")
+	)
+	(segment
+		(start 167.132 94.375)
+		(end 167.132 93.075)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 22)
+		(uuid "92d1e5ed-33d7-4885-9609-d344ad073533")
 	)
 	(segment
 		(start 157.875 88.985)
 		(end 156.575 88.985)
 		(width 0.127)
 		(layer "F.Cu")
-		(net 26)
+		(net 23)
 		(uuid "91619c63-ed49-46fb-9ef8-f3f7c332453e")
+	)
+	(segment
+		(start 169.042 96.25)
+		(end 165.1 96.25)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 24)
+		(uuid "4da392fc-72d6-4dc4-9041-bd2e72c0c5c6")
 	)
 	(segment
 		(start 119.7805 88.985)
 		(end 118.4805 88.985)
 		(width 0.127)
 		(layer "F.Cu")
-		(net 27)
+		(net 25)
 		(uuid "3dc7cad5-10d3-4144-9a96-994b54565a5e")
+	)
+	(segment
+		(start 165.015 106.9806)
+		(end 165.015 105.8506)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 26)
+		(uuid "8b7cd608-15bd-4e45-90fd-9f94adf3d829")
+	)
+	(segment
+		(start 165.015 105.8506)
+		(end 165.1 105.7656)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 26)
+		(uuid "b9a382b3-7de5-40b4-a94b-0323daa220bb")
+	)
+	(segment
+		(start 165.1 107.0656)
+		(end 165.015 106.9806)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 26)
+		(uuid "fb25794e-3ee5-4097-bafa-bb8aa5fcf385")
+	)
+	(segment
+		(start 165.015 93.075)
+		(end 165.015 94.375)
+		(width 0.127)
+		(layer "F.Cu")
+		(net 27)
+		(uuid "69b65642-d5e0-4521-9556-2891b2c3ba19")
 	)
 	(segment
 		(start 111.377 100.35)
