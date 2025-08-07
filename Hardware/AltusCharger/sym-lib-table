@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "AltusCharger-Lib")(type "KiCad")(uri "C:/Users/bnpar/Documents/Repos/Rocketry Repos/AltusCharger/Hardware/AltusCharger-Lib/AltusCharger-Lib.kicad_sym")(options "")(descr ""))
+)
