@@ -18,10 +18,10 @@ DEF TXFM_1 Transform {
  children [
 DEF TXFM_2 Transform {
   center 0 0 0
-  rotation 0 0 -1 1.5707963
+  rotation 0 0 1 3.1415927
   scale 1 1 1
   scaleOrientation 0 0 1 0
-  translation 9.9665354 -2.5246063 0.3161811
+  translation 7.5246063 5.8 0.3161811
  children [
 DEF TXFM_3 Transform {
   center 0 0 0
@@ -3034,10 +3034,10 @@ USE TXFM_7
 ] }
 DEF TXFM_20 Transform {
   center 0 0 0
-  rotation 0 0 1 1.5707963
+  rotation 0 0 -1 1.5707963
   scale 1 1 1
   scaleOrientation 0 0 1 0
-  translation 10.8 -2.5246063 0.3161811
+  translation 9.9665354 -2.5246063 0.3161811
  children [
 USE TXFM_3
 ] }
@@ -10375,6 +10375,15 @@ USE TXFM_15
 ] }
 DEF TXFM_44 Transform {
   center 0 0 0
+  rotation 0 0 1 1.5707963
+  scale 1 1 1
+  scaleOrientation 0 0 1 0
+  translation 10.8 2.4753937 0.3161811
+ children [
+USE TXFM_3
+] }
+DEF TXFM_45 Transform {
+  center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
   scaleOrientation 0 0 1 0
@@ -10382,19 +10391,12 @@ DEF TXFM_44 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_45 Transform {
-  center 0 0 0
-  rotation 0 0 1 0
-  scale 1 1 1
-  scaleOrientation 0 0 1 0
-  translation -9.9 -4.6480315 0.3161811
- children [
 DEF TXFM_46 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
   scaleOrientation 0 0 1 0
-  translation 0 0 0
+  translation -9.9 -4.6480315 0.3161811
  children [
 DEF TXFM_47 Transform {
   center 0 0 0
@@ -10404,6 +10406,13 @@ DEF TXFM_47 Transform {
   translation 0 0 0
  children [
 DEF TXFM_48 Transform {
+  center 0 0 0
+  rotation 0 0 1 0
+  scale 1 1 1
+  scaleOrientation 0 0 1 0
+  translation 0 0 0
+ children [
+DEF TXFM_49 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -11797,16 +11806,16 @@ DEF SHAPE_608 Shape {
 ] }
 ] }
 ] }
-DEF TXFM_49 Transform {
+DEF TXFM_50 Transform {
   center 0 0 0
-  rotation 0 0 1 3.1415927
+  rotation 0 0 1 0
   scale 1 1 1
   scaleOrientation 0 0 1 0
-  translation 7.5246063 5.8 0.3161811
+  translation 7.5246063 4.9665354 0.3161811
  children [
 USE TXFM_3
 ] }
-DEF TXFM_50 Transform {
+DEF TXFM_51 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -11815,7 +11824,7 @@ DEF TXFM_50 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_51 Transform {
+DEF TXFM_52 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -11824,7 +11833,7 @@ DEF TXFM_51 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_52 Transform {
+DEF TXFM_53 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -11833,7 +11842,7 @@ DEF TXFM_52 Transform {
  children [
 USE TXFM_28
 ] }
-DEF TXFM_53 Transform {
+DEF TXFM_54 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11842,16 +11851,16 @@ DEF TXFM_53 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_54 Transform {
+DEF TXFM_55 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
   scaleOrientation 0 0 1 0
   translation -11.430906 -4.2740157 0.3161811
  children [
-USE TXFM_46
+USE TXFM_47
 ] }
-DEF TXFM_55 Transform {
+DEF TXFM_56 Transform {
   center 0 0 0
   rotation 0 0 -1 1.5707963
   scale 1 1 1
@@ -11860,16 +11869,16 @@ DEF TXFM_55 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_56 Transform {
+DEF TXFM_57 Transform {
   center 0 0 0
-  rotation 0 0 1 1.5707963
+  rotation 0 0 -1 1.5707963
   scale 1 1 1
   scaleOrientation 0 0 1 0
-  translation 10.8 2.4753937 0.3161811
+  translation 9.9665354 2.4753937 0.3161811
  children [
 USE TXFM_3
 ] }
-DEF TXFM_57 Transform {
+DEF TXFM_58 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -11878,16 +11887,16 @@ DEF TXFM_57 Transform {
  children [
 USE TXFM_28
 ] }
-DEF TXFM_58 Transform {
+DEF TXFM_59 Transform {
   center 0 0 0
-  rotation 0 0 1 3.1415927
+  rotation 0 0 1 0
   scale 1 1 1
   scaleOrientation 0 0 1 0
-  translation -7.4753937 5.8 0.3161811
+  translation -7.4753937 4.9665354 0.3161811
  children [
 USE TXFM_3
 ] }
-DEF TXFM_59 Transform {
+DEF TXFM_60 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11896,7 +11905,7 @@ DEF TXFM_59 Transform {
  children [
 USE TXFM_24
 ] }
-DEF TXFM_60 Transform {
+DEF TXFM_61 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11905,7 +11914,7 @@ DEF TXFM_60 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_61 Transform {
+DEF TXFM_62 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11914,7 +11923,7 @@ DEF TXFM_61 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_62 Transform {
+DEF TXFM_63 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -11923,7 +11932,7 @@ DEF TXFM_62 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_63 Transform {
+DEF TXFM_64 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11932,7 +11941,7 @@ DEF TXFM_63 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_64 Transform {
+DEF TXFM_65 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -11941,7 +11950,7 @@ DEF TXFM_64 Transform {
  children [
 USE TXFM_24
 ] }
-DEF TXFM_65 Transform {
+DEF TXFM_66 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -11950,7 +11959,7 @@ DEF TXFM_65 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_66 Transform {
+DEF TXFM_67 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11959,7 +11968,7 @@ DEF TXFM_66 Transform {
  children [
 USE TXFM_24
 ] }
-DEF TXFM_67 Transform {
+DEF TXFM_68 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -11968,7 +11977,7 @@ DEF TXFM_67 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_68 Transform {
+DEF TXFM_69 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -11977,7 +11986,7 @@ DEF TXFM_68 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_69 Transform {
+DEF TXFM_70 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11986,7 +11995,7 @@ DEF TXFM_69 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_70 Transform {
+DEF TXFM_71 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -11995,7 +12004,7 @@ DEF TXFM_70 Transform {
  children [
 USE TXFM_3
 ] }
-DEF TXFM_71 Transform {
+DEF TXFM_72 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12004,7 +12013,7 @@ DEF TXFM_71 Transform {
  children [
 USE TXFM_28
 ] }
-DEF TXFM_72 Transform {
+DEF TXFM_73 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -12013,7 +12022,7 @@ DEF TXFM_72 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_73 Transform {
+DEF TXFM_74 Transform {
   center 0 0 0
   rotation 0 0 -1 1.5707963
   scale 1 1 1
@@ -12022,7 +12031,7 @@ DEF TXFM_73 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_74 Transform {
+DEF TXFM_75 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12031,7 +12040,7 @@ DEF TXFM_74 Transform {
  children [
 USE TXFM_28
 ] }
-DEF TXFM_75 Transform {
+DEF TXFM_76 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -12040,19 +12049,12 @@ DEF TXFM_75 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_76 Transform {
+DEF TXFM_77 Transform {
   center 0 0 0
   rotation 0 0 -1 1.5707963
   scale 1 1 1
   scaleOrientation 0 0 1 0
   translation -13.25 0 0.3161811
- children [
-DEF TXFM_77 Transform {
-  center 0 0 0
-  rotation 0 0 1 0
-  scale 1 1 1
-  scaleOrientation 0 0 1 0
-  translation 0 0 0
  children [
 DEF TXFM_78 Transform {
   center 0 0 0
@@ -12062,6 +12064,13 @@ DEF TXFM_78 Transform {
   translation 0 0 0
  children [
 DEF TXFM_79 Transform {
+  center 0 0 0
+  rotation 0 0 1 0
+  scale 1 1 1
+  scaleOrientation 0 0 1 0
+  translation 0 0 0
+ children [
+DEF TXFM_80 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12161,7 +12170,7 @@ DEF SHAPE_614 Shape {
 }
 }
 ] }
-DEF TXFM_80 Transform {
+DEF TXFM_81 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12253,7 +12262,7 @@ DEF SHAPE_620 Shape {
 }
 }
 ] }
-DEF TXFM_81 Transform {
+DEF TXFM_82 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12345,7 +12354,7 @@ DEF SHAPE_626 Shape {
 }
 }
 ] }
-DEF TXFM_82 Transform {
+DEF TXFM_83 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12437,7 +12446,7 @@ DEF SHAPE_632 Shape {
 }
 }
 ] }
-DEF TXFM_83 Transform {
+DEF TXFM_84 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12529,7 +12538,7 @@ DEF SHAPE_638 Shape {
 }
 }
 ] }
-DEF TXFM_84 Transform {
+DEF TXFM_85 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12621,7 +12630,7 @@ DEF SHAPE_644 Shape {
 }
 }
 ] }
-DEF TXFM_85 Transform {
+DEF TXFM_86 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12713,7 +12722,7 @@ DEF SHAPE_650 Shape {
 }
 }
 ] }
-DEF TXFM_86 Transform {
+DEF TXFM_87 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -12805,7 +12814,7 @@ DEF SHAPE_656 Shape {
 }
 }
 ] }
-DEF TXFM_87 Transform {
+DEF TXFM_88 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14177,7 +14186,7 @@ DEF SHAPE_722 Shape {
 }
 }
 ] }
-DEF TXFM_88 Transform {
+DEF TXFM_89 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14292,7 +14301,7 @@ DEF SHAPE_728 Shape {
 }
 }
 ] }
-DEF TXFM_89 Transform {
+DEF TXFM_90 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14409,7 +14418,7 @@ DEF SHAPE_734 Shape {
 }
 }
 ] }
-DEF TXFM_90 Transform {
+DEF TXFM_91 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14526,7 +14535,7 @@ DEF SHAPE_740 Shape {
 }
 }
 ] }
-DEF TXFM_91 Transform {
+DEF TXFM_92 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14643,7 +14652,7 @@ DEF SHAPE_746 Shape {
 }
 }
 ] }
-DEF TXFM_92 Transform {
+DEF TXFM_93 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14760,7 +14769,7 @@ DEF SHAPE_752 Shape {
 }
 }
 ] }
-DEF TXFM_93 Transform {
+DEF TXFM_94 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14877,7 +14886,7 @@ DEF SHAPE_758 Shape {
 }
 }
 ] }
-DEF TXFM_94 Transform {
+DEF TXFM_95 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -14994,7 +15003,7 @@ DEF SHAPE_764 Shape {
 }
 }
 ] }
-DEF TXFM_95 Transform {
+DEF TXFM_96 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -15111,7 +15120,7 @@ DEF SHAPE_770 Shape {
 }
 }
 ] }
-DEF TXFM_96 Transform {
+DEF TXFM_97 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -18636,7 +18645,7 @@ DEF SHAPE_931 Shape {
 }
 }
 ] }
-DEF TXFM_97 Transform {
+DEF TXFM_98 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -18728,7 +18737,7 @@ DEF SHAPE_937 Shape {
 }
 }
 ] }
-DEF TXFM_98 Transform {
+DEF TXFM_99 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -18820,7 +18829,7 @@ DEF SHAPE_943 Shape {
 }
 }
 ] }
-DEF TXFM_99 Transform {
+DEF TXFM_100 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -18912,7 +18921,7 @@ DEF SHAPE_949 Shape {
 }
 }
 ] }
-DEF TXFM_100 Transform {
+DEF TXFM_101 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -19004,7 +19013,7 @@ DEF SHAPE_955 Shape {
 }
 }
 ] }
-DEF TXFM_101 Transform {
+DEF TXFM_102 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -19096,7 +19105,7 @@ DEF SHAPE_961 Shape {
 }
 }
 ] }
-DEF TXFM_102 Transform {
+DEF TXFM_103 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -19188,7 +19197,7 @@ DEF SHAPE_967 Shape {
 }
 }
 ] }
-DEF TXFM_103 Transform {
+DEF TXFM_104 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -19280,7 +19289,7 @@ DEF SHAPE_973 Shape {
 }
 }
 ] }
-DEF TXFM_104 Transform {
+DEF TXFM_105 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -19372,7 +19381,7 @@ DEF SHAPE_979 Shape {
 }
 }
 ] }
-DEF TXFM_105 Transform {
+DEF TXFM_106 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -20736,7 +20745,7 @@ DEF SHAPE_1045 Shape {
 }
 }
 ] }
-DEF TXFM_106 Transform {
+DEF TXFM_107 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -20851,7 +20860,7 @@ DEF SHAPE_1051 Shape {
 }
 }
 ] }
-DEF TXFM_107 Transform {
+DEF TXFM_108 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -20966,7 +20975,7 @@ DEF SHAPE_1057 Shape {
 }
 }
 ] }
-DEF TXFM_108 Transform {
+DEF TXFM_109 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -21081,7 +21090,7 @@ DEF SHAPE_1063 Shape {
 }
 }
 ] }
-DEF TXFM_109 Transform {
+DEF TXFM_110 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -21196,7 +21205,7 @@ DEF SHAPE_1069 Shape {
 }
 }
 ] }
-DEF TXFM_110 Transform {
+DEF TXFM_111 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -21311,7 +21320,7 @@ DEF SHAPE_1075 Shape {
 }
 }
 ] }
-DEF TXFM_111 Transform {
+DEF TXFM_112 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -21428,7 +21437,7 @@ DEF SHAPE_1081 Shape {
 }
 }
 ] }
-DEF TXFM_112 Transform {
+DEF TXFM_113 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -21545,7 +21554,7 @@ DEF SHAPE_1087 Shape {
 }
 }
 ] }
-DEF TXFM_113 Transform {
+DEF TXFM_114 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -21662,7 +21671,7 @@ DEF SHAPE_1093 Shape {
 }
 }
 ] }
-DEF TXFM_114 Transform {
+DEF TXFM_115 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25182,7 +25191,16 @@ DEF SHAPE_1254 Shape {
 ] }
 ] }
 ] }
-DEF TXFM_115 Transform {
+DEF TXFM_116 Transform {
+  center 0 0 0
+  rotation 0 0 1 1.5707963
+  scale 1 1 1
+  scaleOrientation 0 0 1 0
+  translation 10.8 -2.5246063 0.3161811
+ children [
+USE TXFM_3
+] }
+DEF TXFM_117 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25191,7 +25209,7 @@ DEF TXFM_115 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_116 Transform {
+DEF TXFM_118 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25200,25 +25218,25 @@ DEF TXFM_116 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_117 Transform {
+DEF TXFM_119 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
   scaleOrientation 0 0 1 0
   translation -11.430906 -5.6098425 0.3161811
  children [
-USE TXFM_46
+USE TXFM_47
 ] }
-DEF TXFM_118 Transform {
+DEF TXFM_120 Transform {
   center 0 0 0
-  rotation 0 0 -1 1.5707963
+  rotation 0 0 1 3.1415927
   scale 1 1 1
   scaleOrientation 0 0 1 0
-  translation 9.9665354 2.4753937 0.3161811
+  translation -7.4753937 5.8 0.3161811
  children [
 USE TXFM_3
 ] }
-DEF TXFM_119 Transform {
+DEF TXFM_121 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -25227,7 +25245,7 @@ DEF TXFM_119 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_120 Transform {
+DEF TXFM_122 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25236,7 +25254,7 @@ DEF TXFM_120 Transform {
  children [
 USE TXFM_3
 ] }
-DEF TXFM_121 Transform {
+DEF TXFM_123 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25245,7 +25263,7 @@ DEF TXFM_121 Transform {
  children [
 USE TXFM_3
 ] }
-DEF TXFM_122 Transform {
+DEF TXFM_124 Transform {
   center 0 0 0
   rotation 0 0 -1 1.5707963
   scale 1 1 1
@@ -25254,7 +25272,7 @@ DEF TXFM_122 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_123 Transform {
+DEF TXFM_125 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25263,7 +25281,7 @@ DEF TXFM_123 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_124 Transform {
+DEF TXFM_126 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -25272,7 +25290,7 @@ DEF TXFM_124 Transform {
  children [
 USE TXFM_24
 ] }
-DEF TXFM_125 Transform {
+DEF TXFM_127 Transform {
   center 0 0 0
   rotation 0 0 1 3.1415927
   scale 1 1 1
@@ -25281,7 +25299,7 @@ DEF TXFM_125 Transform {
  children [
 USE TXFM_28
 ] }
-DEF TXFM_126 Transform {
+DEF TXFM_128 Transform {
   center 0 0 0
   rotation 0 0 -1 1.5707963
   scale 1 1 1
@@ -25290,7 +25308,7 @@ DEF TXFM_126 Transform {
  children [
 USE TXFM_15
 ] }
-DEF TXFM_127 Transform {
+DEF TXFM_129 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -25299,7 +25317,7 @@ DEF TXFM_127 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_128 Transform {
+DEF TXFM_130 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25308,7 +25326,7 @@ DEF TXFM_128 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_129 Transform {
+DEF TXFM_131 Transform {
   center 0 0 0
   rotation 0 0 1 1.5707963
   scale 1 1 1
@@ -25317,7 +25335,7 @@ DEF TXFM_129 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_130 Transform {
+DEF TXFM_132 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25326,16 +25344,7 @@ DEF TXFM_130 Transform {
  children [
 USE TXFM_7
 ] }
-DEF TXFM_131 Transform {
-  center 0 0 0
-  rotation 0 0 1 0
-  scale 1 1 1
-  scaleOrientation 0 0 1 0
-  translation -7.4753937 4.9665354 0.3161811
- children [
-USE TXFM_3
-] }
-DEF TXFM_132 Transform {
+DEF TXFM_133 Transform {
   center 0 0 0
   rotation 0 0 1 0
   scale 1 1 1
@@ -25343,15 +25352,6 @@ DEF TXFM_132 Transform {
   translation -7.8937008 -8.5334646 0.3161811
  children [
 USE TXFM_24
-] }
-DEF TXFM_133 Transform {
-  center 0 0 0
-  rotation 0 0 1 0
-  scale 1 1 1
-  scaleOrientation 0 0 1 0
-  translation 7.5246063 4.9665354 0.3161811
- children [
-USE TXFM_3
 ] }
 DEF TXFM_134 Transform {
   center 0 0 0
@@ -34964,7 +34964,7 @@ DEF SHAPE_1257 Shape {
   10.620374 -2.7017717 0.3161811,10.58365 -2.7090764 0.3161811,
   10.552517 -2.7298791 0.3161811,10.531714 -2.7610122 0.3161811,
   10.524409 -2.7977362 0.3161811,10.524409 -2.865 0.3161811,
-  9.975 -1.75 0.3161811,9.975 -1.9635827 0.3161811,
+  9.9415354 -1.75 0.3161811,9.9415354 -1.9635827 0.3161811,
   9.7869094 -1.9635827 0.3161811,9.7501854 -1.9708874 0.3161811,
   9.7190524 -1.9916902 0.3161811,9.6982496 -2.0228232 0.3161811,
   9.6909449 -2.0595472 0.3161811,9.6909449 -2.2514764 0.3161811,
@@ -34975,7 +34975,7 @@ DEF SHAPE_1257 Shape {
   10.242126 -2.2514764 0.3161811,10.242126 -2.0595472 0.3161811,
   10.234821 -2.0228232 0.3161811,10.214019 -1.9916902 0.3161811,
   10.182885 -1.9708874 0.3161811,10.146161 -1.9635827 0.3161811,
-  10.025 -1.9635827 0.3161811,10.025 -1.75 0.3161811,
+  9.9915354 -1.9635827 0.3161811,9.9915354 -1.75 0.3161811,
   10.03937 -1.75 0.3161811,10.059709 -1.7459543 0.3161811,
   10.076952 -1.7344327 0.3161811,10.088474 -1.7171898 0.3161811,
   10.09252 -1.6968504 0.3161811,10.09252 -1.5905512 0.3161811,
@@ -35318,8 +35318,8 @@ DEF SHAPE_1257 Shape {
   10.979626 2.2982283 0.3161811,10.620374 2.2982283 0.3161811,
   10.58365 2.2909236 0.3161811,10.552517 2.2701209 0.3161811,
   10.531714 2.2389878 0.3161811,10.524409 2.2022638 0.3161811,
-  10.524409 2.1312992 0.3161811,9.975 3.25 0.3161811,
-  9.975 3.0364173 0.3161811,9.7869094 3.0364173 0.3161811,
+  10.524409 2.1312992 0.3161811,9.9415354 3.25 0.3161811,
+  9.9415354 3.0364173 0.3161811,9.7869094 3.0364173 0.3161811,
   9.7501854 3.0291126 0.3161811,9.7190524 3.0083098 0.3161811,
   9.6982496 2.9771768 0.3161811,9.6909449 2.9404528 0.3161811,
   9.6909449 2.7485236 0.3161811,9.6982496 2.7117996 0.3161811,
@@ -35329,8 +35329,8 @@ DEF SHAPE_1257 Shape {
   10.234821 2.7117996 0.3161811,10.242126 2.7485236 0.3161811,
   10.242126 2.9404528 0.3161811,10.234821 2.9771768 0.3161811,
   10.214019 3.0083098 0.3161811,10.182885 3.0291126 0.3161811,
-  10.146161 3.0364173 0.3161811,10.025 3.0364173 0.3161811,
-  10.025 3.25 0.3161811,10.03937 3.25 0.3161811,
+  10.146161 3.0364173 0.3161811,9.9915354 3.0364173 0.3161811,
+  9.9915354 3.25 0.3161811,10.03937 3.25 0.3161811,
   10.059709 3.2540457 0.3161811,10.076952 3.2655673 0.3161811,
   10.088474 3.2828102 0.3161811,10.09252 3.3031496 0.3161811,
   10.09252 3.4094488 0.3161811,10.088474 3.4297882 0.3161811,
