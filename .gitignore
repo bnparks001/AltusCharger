@@ -1,0 +1,15 @@
+# ignore emacs backup files
+*~
+
+# ignore SolidWorks temporary files
+~$*.SLDPRT
+~$*.SLDASM
+
+# KiCAD Backups
+*-bak
+*-backups
+*-cache*
+*-bak*
+*.lck
+_autosave*
+\#auto_saved_files\#
