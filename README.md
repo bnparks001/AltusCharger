@@ -5,8 +5,8 @@
   ## Status
   Boards have arrived and passed testing great!
   <div>
-    <h3><em>3D Render:</em></h3>
-    <img src="rsc/img/Altus_Charger_V1" alt="Altus Charger Board" style="height: auto; width: 400px;">
+    <h3><em>Assembled Board:</em></h3>
+    <img src="rsc/img/Altus_Charger_V1.png" alt="Altus Charger Board" style="height: auto; width: 400px;">
   </div>
   
   ## Hardware
