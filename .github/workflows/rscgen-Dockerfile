@@ -1,0 +1,23 @@
+FROM ghcr.io/kicad/kicad:nightly-full
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+USER root
+
+# Install only what we need for headless rendering
+RUN apt-get update \
+    && apt-get install -y \
+		sed \
+        inkscape \
+        libpng-dev \
+        ca-certificates \
+        curl \
+        tar \
+    && rm -rf /var/lib/apt/lists/*
+
+# Switch back to the default non-root user
+# (KiCad images use uid 1000)
+USER 1000
+
+# Use a neutral workspace for CI
+WORKDIR /workspace

@@ -2802,7 +2802,7 @@
 	)
 	(text "Charging Circuits"
 		(exclude_from_sim no)
-		(at 88.646 17.526 0)
+		(at 88.138 17.526 0)
 		(effects
 			(font
 				(size 3.048 3.048)
