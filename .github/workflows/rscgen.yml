@@ -121,8 +121,8 @@ jobs:
                 # Cropping
                 sed -i 's/fill="white"/fill="none"/g' gen/images/pcb_front.svg
                 sed -i 's/fill="white"/fill="none"/g' gen/images/pcb_back.svg
-                inkscape --export-area-drawing --export-filename=pcb_front.svg pcb_front.svg
-                inkscape --export-area-drawing --export-filename=pcb_back.svg pcb_back.svg
+                inkscape --export-area-drawing --export-filename=gen/images/pcb_front.svg gen/images/pcb_front.svg
+                inkscape --export-area-drawing --export-filename=gen/images/pcb_back.svg gen/images/pcb_back.svg
       
                 # Export 3D model (tolerate warnings, check output)
                 kicad-cli pcb export step kicad/*.kicad_pcb --output 'gen/3d/pcb_model.step' || echo \"Warning: STEP export encountered issues, checking output...\"
